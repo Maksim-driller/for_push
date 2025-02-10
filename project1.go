@@ -26,8 +26,7 @@ func IntToLetters(num int) string {
 						num10 := num5 - 50
 						num11 := num10 / 10
 						newString += strings.Repeat("C", num11)
-						num12 := num10 % 10
-						if num12 > 5 {
+						num12 = num10 % 10 
 							num13 := num12 - 5
 							newString += "B"
 							newString += strings.Repeat("A", num13)
